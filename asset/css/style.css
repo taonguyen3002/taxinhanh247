@@ -33,7 +33,18 @@ a {
   border-bottom: 1px solid #00000015;
 }
 .header__logo {
+  position: relative;
   margin-left: -30px;
+}
+.logo {
+  margin-bottom: 10px;
+}
+.header__logo--slogan {
+  position: absolute;
+  right: -4px;
+  font-size: 1.5rem;
+  color: rgba(255, 166, 0, 0.534);
+  bottom: 13px;
 }
 .navbar__list {
   display: flex;
