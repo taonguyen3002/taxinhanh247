@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: https://taxinhanh247.pro.vn.pro/sitemap.xml
