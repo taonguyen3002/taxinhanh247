@@ -448,4 +448,57 @@
   align-items: center;
 }
 
+.text-content {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.text-content h2,
+.text-content h3,
+.text-content h4,
+.text-content h5,
+.text-content h6 {
+  font-weight: 600;
+}
+.text-content h2 {
+  font-size: 2.6rem;
+}
+.text-content h3 {
+  font-size: 2.4rem;
+}
+.text-content h4 {
+  font-size: 2rem;
+}
+.text-content h2,
+.text-content h3,
+.text-content h4,
+.text-content h5,
+.text-content h6,
+.text-content p,
+.text-content img,
+.text-content blockquote {
+  margin: 20px 0;
+}
+.text-content img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  display: block;
+}
+.text-content a {
+  color: blue;
+}
+.text-content img + em {
+  font-style: italic;
+  display: block;
+  text-align: center;
+}
+.text-content blockquote {
+  border-left: 1.5px solid #ccc;
+  padding: 20px;
+  background: #eee;
+}
+.text-content blockquote p {
+  margin: 0;
+}
+
 /*# sourceMappingURL=index.css.map */
