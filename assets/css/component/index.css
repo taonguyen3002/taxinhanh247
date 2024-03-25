@@ -500,5 +500,11 @@
 .text-content blockquote p {
   margin: 0;
 }
+.text-content tr {
+  border: 1px solid #ccc;
+}
+.text-content td {
+  padding: 10px;
+}
 
 /*# sourceMappingURL=index.css.map */
