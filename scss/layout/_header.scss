@@ -48,6 +48,7 @@
   &__logo {
     &-inner {
       border-radius: 999px;
+      padding: 5px 20px 5px 5px;
       border: 1px solid var(--primary-color);
       display: flex;
       gap: 20px;
@@ -71,7 +72,6 @@
       font-weight: 600;
       font-size: 2.6rem;
       line-height: 1.5;
-      padding: 0 15px;
       color: var(--primary-color);
       @include abstracts.screen(md) {
         font-size: 2.2rem;
