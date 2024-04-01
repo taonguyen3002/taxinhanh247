@@ -9,7 +9,7 @@
   &__logo {
     margin-bottom: 20px;
     @include abstracts.screen(lg) {
-      max-width: 400px;
+      width: min(250px, 100%);
     }
     &-inner {
       border-radius: 999px;

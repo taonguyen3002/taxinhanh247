@@ -116,7 +116,7 @@
 }
 @media (max-width: 991.98px) {
   .footer__logo {
-    max-width: 400px;
+    width: min(250px, 100%);
   }
 }
 .footer__logo-inner {
