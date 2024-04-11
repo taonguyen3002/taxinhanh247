@@ -1,16 +1,20 @@
+@use "../abstracts";
 .booking {
   margin-top: 30px;
   padding-top: 1px;
   position: relative;
   &__form {
-    padding: 20px;
+    border-radius: 20px;
+    padding: 40px;
     background: var(--primary-color-2);
-    &-inner {
-      flex-direction: column;
-      gap: 15px;
-      margin-top: 30px;
-      margin-bottom: 60px;
+    @include abstracts.screen(md) {
+      padding: 20px;
     }
+  }
+  &__form-inner {
+    flex-direction: column;
+    gap: 15px;
+    margin: 30px 0;
   }
   &__title {
     text-align: center;
@@ -20,13 +24,14 @@
   }
   &__item {
     display: flex;
+    align-items: center;
     gap: 10px;
     border: 1px solid var(--primary-color-3);
     padding: 5px 10px;
-    height: 30px;
+    height: 40px;
     width: 100%;
     background: #fff;
-    border-radius: 4px;
+    border-radius: 12px;
     &--icon1 {
       color: #56c441;
       &::before {
@@ -39,6 +44,9 @@
         content: "\f3c5";
       }
     }
+    @include abstracts.screen(md) {
+      height: 46px;
+    }
   }
   &__input {
     width: 100%;
@@ -47,9 +55,11 @@
     background: none;
   }
   &__submit {
+    width: min(250px, 80%);
+    margin-left: auto;
     border: 1px solid var(--primary-color-3);
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
+  }
+  &-item__row {
+    flex: 1;
   }
 }

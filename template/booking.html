@@ -1,4 +1,4 @@
-<form class="booking__form">
+<form class="form booking__form">
   <h3 class="booking__title">BOOKING ONLINE</h3>
   <div class="booking__form-inner d-flex">
     <div class="booking__item">
@@ -25,8 +25,8 @@
       <i class="fa-solid fa-car"></i>
       <input
         type="text"
-        name=""
-        id=""
+        name="service"
+        id="service"
         placeholder="Loại dịch vụ"
         class="booking__input"
       />
@@ -35,8 +35,8 @@
       <i class="fas fa-user"></i>
       <input
         type="text"
-        name=""
-        id=""
+        name="name"
+        id="name"
         placeholder="Họ và Tên"
         class="booking__input"
       />
@@ -45,8 +45,8 @@
       <i class="fas fa-phone-square-alt"></i>
       <input
         type="tel"
-        name=""
-        id=""
+        name="phone"
+        id="phone"
         placeholder="Số điện thoại"
         class="booking__input"
       />
@@ -62,7 +62,9 @@
       />
     </div>
   </div>
-  <a href="tel:0922402030"
-    ><button class="booking__submit btn btn--primary">ĐẶT NGAY</button></a
-  >
+  <div class="booking-item__row">
+    <a href="tel:0922402030" class="booking__submit btn btn--primary"
+      >ĐẶT NGAY</a
+    >
+  </div>
 </form>
