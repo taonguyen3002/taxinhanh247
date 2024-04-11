@@ -1353,7 +1353,6 @@ select {
 }
 
 .separate {
-  width: 60vw;
   height: 1.5px;
   background: var(--primary-color-2);
   margin: 30px auto;
@@ -1765,7 +1764,7 @@ select {
 }
 .review-card__title {
   margin-bottom: 6px;
-  font-weight: 2.2rem;
+  font-size: 2.2rem;
   font-weight: 600;
   line-height: 1.42;
 }
@@ -1773,6 +1772,7 @@ select {
   font-weight: 400;
   line-height: 1.35;
   font-size: 1.6rem;
+  margin: 0 !important;
 }
 .review-card__thumb {
   --review-card-thumb-width: 80px;
@@ -1818,6 +1818,9 @@ select {
   display: flex;
   gap: 6px;
   align-items: center;
+}
+.review-card__star {
+  margin: 0 auto !important;
 }
 
 .text-content {

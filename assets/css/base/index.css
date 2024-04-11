@@ -1353,7 +1353,6 @@ select {
 }
 
 .separate {
-  width: 60vw;
   height: 1.5px;
   background: var(--primary-color-2);
   margin: 30px auto;
