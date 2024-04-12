@@ -52,6 +52,9 @@
     justify-content: center;
   }
 }
+.topbar__logo {
+  cursor: pointer;
+}
 .topbar__logo-inner {
   border-radius: 999px;
   padding: 5px 20px 5px 5px;
