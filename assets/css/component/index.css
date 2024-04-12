@@ -253,6 +253,7 @@
   gap: 20px;
   flex-direction: column;
   position: fixed;
+  z-index: 1;
   bottom: 30px;
   right: 20px;
 }
@@ -266,7 +267,7 @@
 .contact__item {
   background: #fff;
   position: relative;
-  padding: 15px;
+  padding: 8px;
   border: 1.5px solid #ccc;
   border-radius: 50%;
   z-index: 100;
@@ -274,12 +275,14 @@
 @media (max-width: 767.98px) {
   .contact__item {
     padding: 10px;
-    width: 70px;
-    height: 70px;
   }
 }
+.contact__item img {
+  width: var(--contact-icon-width, 40px);
+  object-fit: cover;
+}
 .contact__item + .contact__item {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .contact__phone {
   animation: phonerotate infinite;
