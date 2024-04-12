@@ -1430,6 +1430,7 @@ select {
   opacity: 0.2;
 }
 .slideshow__heading {
+  text-transform: uppercase;
   font-weight: 600;
   font-size: 3rem;
   line-height: 1.45;
@@ -1846,6 +1847,7 @@ select {
 .text-content h5,
 .text-content h6 {
   font-weight: 600;
+  text-transform: capitalize;
 }
 .text-content h2 {
   font-size: 2.6rem;
