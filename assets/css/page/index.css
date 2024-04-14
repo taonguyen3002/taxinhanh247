@@ -6,6 +6,9 @@
     padding-top: 15px;
   }
 }
+.home-container {
+  margin: 20px auto;
+}
 
 .write-page__list {
   display: flex;
