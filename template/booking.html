@@ -1,12 +1,12 @@
-<form class="form booking__form" autocomplete="on">
-  <h3 class="booking__title">BOOKING ONLINE</h3>
+<form class="form booking__form" id="formbooking" autocomplete="on">
+  <h3 class="booking__title">ĐẶT XE ONLINE</h3>
   <div class="booking__form-inner d-flex">
     <div class="booking__item">
       <i class="fas booking__item--icon1"></i>
       <input
         type="text"
-        name="dia-chi-don"
-        id="dia-chi-don"
+        name="address1"
+        id="address1"
         placeholder="Điểm đón"
         class="booking__input"
       />
@@ -15,8 +15,8 @@
       <i class="fas fa-map-marker-alt booking__item--icon2"></i>
       <input
         type="text"
-        name="dia-chi-den"
-        id="dia-chi-den"
+        name="address2"
+        id="address2"
         placeholder="Điểm đến"
         class="booking__input"
       />
@@ -25,8 +25,8 @@
       <i class="fa-solid fa-car"></i>
       <input
         type="text"
-        name="service"
-        id="service"
+        name="drive"
+        id="drive"
         placeholder="Loại dịch vụ"
         class="booking__input"
       />
@@ -35,8 +35,8 @@
       <i class="fas fa-user"></i>
       <input
         type="text"
-        name="name"
-        id="name"
+        name="fullname"
+        id="fullname"
         placeholder="Họ và Tên"
         class="booking__input"
       />
@@ -45,8 +45,8 @@
       <i class="fas fa-phone-square-alt"></i>
       <input
         type="tel"
-        name="phone"
-        id="phone"
+        name="numberphone"
+        id="numberphone"
         placeholder="Số điện thoại"
         class="booking__input"
       />
@@ -55,16 +55,17 @@
       <i class="fa-regular fa-clock"></i>
       <input
         type="text"
-        name="time-booking"
-        id="time-booking"
+        name="timebook"
+        id="timebook"
         placeholder="Thời gian"
         class="booking__input"
       />
     </div>
   </div>
-  <div class="booking-item__row">
-    <a href="tel:0898335292" class="booking__submit btn btn--primary"
-      >ĐẶT NGAY</a
-    >
-  </div>
+  <button
+    type="submit"
+    class="booking-item__row booking__submit btn btn--primary"
+  >
+    ĐẶT NGAY
+  </button>
 </form>
