@@ -67,12 +67,10 @@ const handleClickButton = async (nameClick) => {
   const pathName = window.location.href;
   const timeClick = Date.now();
   const userIP = await takeIP();
-  const location = await takelocation();
-  const { latitude, longitude } = location;
 
   const message = `Người dùng đã click\nIP: ${userIP}\nThời gian click: ${new Date(
     timeClick
-  ).toLocaleString()}\nĐã nhấn vào: ${nameClick} \n URICLICK:\n${pathName}\n Vị trí:https://www.google.com/maps/place/${latitude},${longitude}`;
+  ).toLocaleString()}\nĐã nhấn vào: ${nameClick} \n URICLICK:\n${pathName}\n `;
   await sendMessageToTelegram(message);
 };
 
