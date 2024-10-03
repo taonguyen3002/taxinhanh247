@@ -107,7 +107,7 @@
 //   alert("Bạn đã đặt chuyến đi thành công ! Vui lòng đợi it phút");
 // };
 
-document.getElementById("formbooking").addEventListener("submit", handleSubmit);
+// document.getElementById("formbooking").addEventListener("submit", handleSubmit);
 const takeIP = async () => {
   try {
     const response = await fetch("https://api.ipify.org?format=json");
