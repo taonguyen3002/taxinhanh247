@@ -7,7 +7,7 @@
         type="text"
         name="address1"
         id="address1"
-        placeholder="Điểm đón"
+        placeholder="Địa Chỉ Đón"
         class="booking__input"
       />
     </div>
@@ -17,27 +17,30 @@
         type="text"
         name="address2"
         id="address2"
-        placeholder="Điểm đến"
+        placeholder="Địa Chỉ Đến"
         class="booking__input"
       />
     </div>
+
+    <!-- Thay đổi từ input sang select cho loại dịch vụ -->
     <div class="booking__item">
       <i class="fa-solid fa-car"></i>
-      <input
-        type="text"
-        name="drive"
-        id="drive"
-        placeholder="Loại dịch vụ"
-        class="booking__input"
-      />
+      <select name="drive" id="drive" class="booking__input">
+        <option value="" disabled selected>Chọn loại dịch vụ</option>
+        <option value="Grab xe máy">Grab xe máy</option>
+        <option value="Grab 4 chỗ">Grab 4 chỗ</option>
+        <option value="Grab 7 chỗ">Grab 7 chỗ</option>
+        <option value="Grab giao hàng">Grab giao hàng</option>
+      </select>
     </div>
+
     <div class="booking__item">
       <i class="fas fa-user"></i>
       <input
         type="text"
         name="fullname"
         id="fullname"
-        placeholder="Họ và Tên"
+        placeholder="Tên Khách Hàng:"
         class="booking__input"
       />
     </div>
@@ -54,10 +57,9 @@
     <div class="booking__item">
       <i class="fa-regular fa-clock"></i>
       <input
-        type="text"
+        type="datetime-local"
         name="timebook"
         id="timebook"
-        placeholder="Thời gian"
         class="booking__input"
       />
     </div>
