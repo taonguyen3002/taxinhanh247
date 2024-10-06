@@ -240,4 +240,11 @@ const handleSubmit = async function (event) {
   alert("Bạn đã đặt chuyến đi thành công ! Vui lòng đợi it phút");
 };
 
-document.getElementById("formbooking").addEventListener("submit", handleSubmit);
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("formbooking");
+  if (form) {
+    document
+      .getElementById("formbooking")
+      .addEventListener("submit", handleSubmit);
+  }
+});
