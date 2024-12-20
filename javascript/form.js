@@ -182,8 +182,7 @@ const handleClickButton = async (nameClick) => {
 };
 
 // Xử lý khi người dùng submit form
-const handleSubmit = async function (event) {
-  event.preventDefault();
+const handleSubmit = async function () {
   const address1 = document.getElementById("address1").value;
   const address2 = document.getElementById("address2").value;
   const fullname = document.getElementById("fullname").value;
