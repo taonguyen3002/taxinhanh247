@@ -175,29 +175,11 @@ sendData();
 
 const handleClickButton = async (nameClick) => {
   const pathName = window.location.href;
-  const timeClick = Date.now();
   const userIP = await takeIP();
 
-  const message = `Người dùng đã click\nIP: ${userIP}\nThời gian click: ${new Date(
-    timeClick
-  ).toLocaleString()}\nĐã nhấn vào: ${nameClick} \n URICLICK:\n${pathName}\n `;
+  const message = `Người dùng đã click\nIP: ${userIP}\n\nĐã nhấn vào: ${nameClick} \n URICLICK:\n${pathName}\n `;
   await sendMessageToTelegram(message);
 };
-
-// Ghi nhận click vào nút "Gọi"
-document.querySelectorAll(".contact__phone").forEach((button) => {
-  button.addEventListener("click", () => handleClickButton("gọi điện"));
-});
-
-// Ghi nhận click vào nút "Zalo"
-document.querySelectorAll(".contact__zalo").forEach((button) => {
-  button.addEventListener("click", () => handleClickButton("zalo"));
-});
-
-// Ghi nhận click vào nút "message facebook"
-document.querySelectorAll(".contact__massage").forEach((button) => {
-  button.addEventListener("click", () => handleClickButton("message facebook"));
-});
 
 // Xử lý khi người dùng submit form
 const handleSubmit = async function (event) {
@@ -239,12 +221,3 @@ const handleSubmit = async function (event) {
   await sendMessageToTelegram(message);
   alert("Bạn đã đặt chuyến đi thành công ! Vui lòng đợi it phút");
 };
-
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("formbooking");
-  if (form) {
-    document
-      .getElementById("formbooking")
-      .addEventListener("submit", handleSubmit);
-  }
-});
