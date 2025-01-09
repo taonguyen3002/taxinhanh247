@@ -64,6 +64,18 @@ var posts = [
       "Tổng Đài Đặt Xe Taxi Tại Bình Dương Dịch Vụ Đặt Xe Qua Website & Hotline 0559023567",
     link: "https://taxinhanh247.pro.vn/bai-viet/taxi-binh-duong",
   },
+  {
+    id: 11,
+    img: "https://taxinhanh247.pro.vn/assets/image/thumb/grab.jpg",
+    title: "Đặt Taxi Chơn Thành : Tổng Đài Taxi Giá Rẻ Tại Bình Phước",
+    link: "https://taxinhanh247.pro.vn/bai-viet/taxi-chon-thanh-binh-phuoc",
+  },
+  {
+    id: 12,
+    img: "https://taxinhanh247.pro.vn/assets/image/thumb/grab.jpg",
+    title: "Đặt Taxi Cần Giờ :Taxi 4 chỗ - 7 chỗ - 16 chỗ Cần Giờ",
+    link: "https://taxinhanh247.pro.vn/bai-viet/taxi-can-gio",
+  },
 ];
 function fetchPosts() {
   return new Promise(function (resolve) {
